@@ -2,7 +2,7 @@
  Stop the many vivox related errors in the ARK Dev Kit using detours and dll proxying
 
 ## Prerequisites
-I made this using the latest version of the dev kit (v320.1) but it should work on previous versions.
+I made this to work on the latest version of the dev kit (v320.1) but it should work on previous versions.
 
 The latest Visual Studio C++ runtime files, located here (*chances are you probably already have these installed*):
 
