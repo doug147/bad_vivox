@@ -12,7 +12,7 @@ https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-d
 
 ![Path to drop winmm.dll](https://i.imgur.com/KzdzUHz.png)
 
-3. That's all, you should now be able to run ARK from the dev kit in standalone mode without the Vivox errors.  See below for how it works
+3. That's all, you should now be able to run ARK from the dev kit in standalone mode without the Vivox errors.  See below for how it works.
 
 ## How it works
 
