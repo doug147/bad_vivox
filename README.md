@@ -14,6 +14,8 @@ https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-d
 
 3. That's all, you should now be able to run ARK from the dev kit in standalone mode without the Vivox errors.  See below for how it works.
 
+*Note: By having winmm.dll in that directory it could mean that any .exe file that runs from that specific directory will also cause our winmm.dll to attach to it.. but it should not cause any problems.  The dll will autmoatically unload itself after a few minutes once it does not find the standalone ark window and once it does not find the module UE4-ShooterGame.dll.  If you do not want it to do this or if it causes problems with anything (it has not in my testing), just rename winmm.dll to something else while you are not using it, and rename it back when you want to launch ark as a standalone game from the dev kit.*
+
 ## How it works
 
 1. DLL proxying (more specifically in this case it is a dll wrapper) is used for purpose of having the DLL loaded automatically once UE4Editor.exe starts, in order to quickly hook the Vivox functions that cause crashes.  When UE4Editor.exe starts, it initially looks in it's own directory for **winmm.dll** before searching elsewhere and eventually the real winmm.dll at *c:\windows\system32\winmm.dll*.  We simply place our dll in it's directory and forward all non-implemented functionality back to the original DLL.
