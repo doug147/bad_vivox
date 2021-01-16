@@ -9,6 +9,8 @@ https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-d
 ## Install instructions
 1. Compile the source, or download the precompiled dll from https://github.com/doug147/bad_vivox/releases - note there are **2** versions.. one (**bad_vivox_1_0_with_console.zip**) makes a console window also appear when ark launches as a standalone game and it prints debug information for you to see as it stops the crashes, and the other (**bad_vivox_1_0.zip**) does not print any debug information.
 
+![Example of version with console window and debug output](https://i.imgur.com/Wtpdn1N.png)
+
 2. Drop **winmm.dll** into the same directory as **UE4Editor.exe**.  For example, the directory I placed mine in is **C:\Program Files\Epic Games\ARKEditor\Engine\Binaries\Win64**.
 
 ![Path to drop winmm.dll](https://i.imgur.com/xMY9TDM.png)
